@@ -1,3 +1,112 @@
+
 * {
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    font-family: 'Slabo 27px', serif;
+  }
+   
+  main h2 {
+    font-family: 'Slabo 27px', serif;
+  }
+  
+  main h3 {
+    font-family: 'Slabo 27px', serif;
+  }
+  
+  main p {
+   font-family: 'Slabo 27px', serif;
+   margin-bottom: 0px;
+  }
+  
+  
+  header {
+    background-color: black;
+    margin-bottom: 40px;
+    display: block;
+  }
+  
+  header h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    font-family: 'Patua One', cursive;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    padding-bottom: 0;
+  }
+  
+  header nav ul li {
+    list-style-type: none;
+  }
+  
+  header nav ul li a {
+    color:white;
+    text-decoration: none;
+    padding: 0 20px 0 0;
+    font-family: 'Slabo 27px', serif;
+  }
+  
+  
+  @media all and (min-width: 800px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    header h1 {
+      margin: 14px 0 14px 14px;
+      padding-top: 0;
+      font-size: 42px;
+    }
+    
+    header nav {
+      margin-top: 14px;
+    }
+  }
+  
+
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .items {
+    flex: 1;
+    margin: 10px;
+  }
+    
+  @media all and (min-width: 800px) {
+  
+    .group {
+      flex-direction: row;
+    }
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  form input, 
+  form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  form textarea {
+    height: 300px;
+  }
+  
+  
+  
