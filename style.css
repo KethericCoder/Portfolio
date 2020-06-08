@@ -1,112 +1,154 @@
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    margin: 0;
-    font-family: 'Slabo 27px', serif;
-  }
-   
-  main h2 {
-    font-family: 'Slabo 27px', serif;
-  }
-  
-  main h3 {
-    font-family: 'Slabo 27px', serif;
-  }
-  
-  main p {
-   font-family: 'Slabo 27px', serif;
-   margin-bottom: 0px;
-  }
-  
-  
-  header {
-    background-color: black;
-    margin-bottom: 40px;
-    display: block;
-  }
-  
-  header h1 {
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding-top: 20px;
-    font-family: 'Patua One', cursive;
-  }
-  
-  header nav {
-    display: flex;
-    justify-content: center;
-  }
-  
-  header nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    padding-bottom: 0;
-  }
-  
-  header nav ul li {
-    list-style-type: none;
-  }
-  
-  header nav ul li a {
-    color:white;
-    text-decoration: none;
-    padding: 0 20px 0 0;
-    font-family: 'Slabo 27px', serif;
-  }
-  
-  
-  @media all and (min-width: 800px) {
-    header {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    header h1 {
-      margin: 14px 0 14px 14px;
-      padding-top: 0;
-      font-size: 42px;
-    }
-    
-    header nav {
-      margin-top: 14px;
-    }
-  }
-  
+  margin: 0;
+  font-family: "Slabo 27px", serif;
+  background-color: #1f2833;
+}
 
-  .group {
+main {
+  text-align: center;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 20px dotted #66fcf1;
+  margin: 15px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.items {
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-between;
+  color: #c5c6c7;
+  border: thin 18px #66fcf1 solid;
+}
+
+main h2 {
+  font-family: "Slabo 27px", serif;
+  color: #c5c6c7;
+}
+
+main h3 {
+  font-family: "Slabo 27px", serif;
+  color: #c5c6c7;
+}
+
+main {
+  font-family: "Slabo 27px", serif;
+  margin-bottom: 0px;
+  color: #c5c6c7;
+}
+
+header {
+  background-color: #0b0c10;
+  margin-bottom: 40px;
+  display: block;
+}
+
+header h1 {
+  color: #66fcf1;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  font-family: "Patua One", cursive;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #66fcf1;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: "Slabo 27px", serif;
+}
+
+form {
+  width: 80%;
+}
+
+.footer {
+  color: #45a29e;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media all and (min-width: 800px) {
+  header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
   }
-  
-  .items {
-    flex: 1;
-    margin: 10px;
+
+  header h1 {
+    margin: 14px 0 14px 14px;
+    padding-top: 0;
+    font-size: 42px;
   }
-    
-  @media all and (min-width: 800px) {
-  
-    .group {
-      flex-direction: row;
-    }
+
+  header nav {
+    margin-top: 14px;
   }
-  
-  form label {
-    display: block;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
   }
-  
-  form input, 
-  form textarea {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  form textarea {
-    height: 300px;
-  }
-  
-  
-  
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 300px;
+}
