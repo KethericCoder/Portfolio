@@ -11,6 +11,10 @@ main {
   text-align: center;
 }
 
+.my-photo {
+  margin-bottom: 40px;
+}
+
 img {
   height: 200px;
   width: 200px;
@@ -19,7 +23,9 @@ img {
 
 hr {
   border: 0;
-  height: 1px;
+  height: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0),
@@ -29,8 +35,6 @@ hr {
 }
 
 .group {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   border: 20px dotted #66fcf1;
   margin: 15px;
@@ -40,8 +44,6 @@ hr {
 
 .items {
   list-style-type: none;
-  display: inline-flex;
-  justify-content: space-between;
   color: #c5c6c7;
   border: thin 18px #66fcf1 solid;
 }
@@ -99,9 +101,10 @@ header nav ul li a {
   font-family: "Slabo 27px", serif;
 }
 
-form {
-  width: 80%;
+.p-link a {
+  color: #66fcf1;
 }
+
 
 .footer {
   color: #45a29e;
@@ -109,6 +112,11 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
 }
 
 @media all and (min-width: 800px) {
@@ -126,29 +134,8 @@ form {
   header nav {
     margin-top: 14px;
   }
-}
 
 .group {
   display: flex;
   flex-direction: column;
-}
-
-@media all and (min-width: 800px) {
-  .group {
-    flex-direction: row;
-  }
-}
-
-form label {
-  display: block;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-form textarea {
-  height: 300px;
 }
