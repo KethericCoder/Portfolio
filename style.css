@@ -36,7 +36,6 @@ hr {
 
 .group {
   align-items: center;
-  border: 20px dotted #66fcf1;
   margin: 15px;
   font-size: 20px;
   padding: 20px;
@@ -118,6 +117,20 @@ label {
   display: flex;
   flex-direction: column;
 }
+
+.p-link a:link {
+  color: #66fcf1
+}
+.p-link a:visited {
+  color: #c5c6c7
+}
+.p-link a:hover {
+  color: #45a29e
+}
+.p-link a:active {
+  color: #1f2833;
+}
+
 
 @media all and (min-width: 800px) {
   header {
